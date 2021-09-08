@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div *ngIf="train.name">
+        <h2 class="pt-font text-align-center">{{train.name}}</h2>
+    </div>
+    
+
+    <div class="flex flex-center"> 
+        <button type="button" class="btn btn-background-color margin" (click)="firstClass()">First Class</button>
+        <button type="button" class="btn btn-background-color margin" (click)="secondClass()">Second Class</button>
+        <button type="button" class="btn btn-background-color margin" (click)="sleeping()">Sleeping</button>
+    </div>
+
+
+    <div class="btn-toolbar mt-3 flex flex-center" role="toolbar" aria-label="Toolbar with button groups">
+
+        <div>
+            <div class="btn-group me-2" role="group" aria-label="First group" *ngFor="let seat of seats">
+                <button type="button" class="btn btn-outline-secondary margin" #button="ngModel" name="button" ngModel >{{seat.seatNumber}}</button>
+              </div>
+        </div>
+        
+
+</div>

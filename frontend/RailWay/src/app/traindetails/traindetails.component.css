@@ -1,0 +1,21 @@
+.pt-font{
+    font-family: 'PT Sans', sans-serif;
+}
+.text-align-center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items:center;
+}
+.btn-background-color{
+    background-color: #e8e266;
+}
+.margin{
+    margin: 10px;
+}

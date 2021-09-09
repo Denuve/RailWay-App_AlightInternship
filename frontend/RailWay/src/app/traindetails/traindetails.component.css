@@ -16,6 +16,15 @@
 .btn-background-color{
     background-color: #e8e266;
 }
+.btn-color{
+    color: white;
+}
+.btn-occupied-background-color{
+    background-color: rgb(187, 9, 9);
+}
+.btn-free-background-color{
+    background-color: rgb(33, 199, 33);
+}
 .margin{
     margin: 10px;
 }

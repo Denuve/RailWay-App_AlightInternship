@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TraindetailsComponent } from './traindetails/traindetails.component';
+import { BookseatsComponent } from './bookseats/bookseats.component';
 
 
 
@@ -17,7 +18,8 @@ import { TraindetailsComponent } from './traindetails/traindetails.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    TraindetailsComponent
+    TraindetailsComponent,
+    BookseatsComponent
   ],
   imports: [
     BrowserModule,

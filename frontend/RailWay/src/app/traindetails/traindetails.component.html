@@ -13,12 +13,14 @@
 
 
     <div class="btn-toolbar mt-3 flex flex-center" role="toolbar" aria-label="Toolbar with button groups">
-
-        <div>
             <div class="btn-group me-2" role="group" aria-label="First group" *ngFor="let seat of seats">
-                <button type="button" class="btn btn-outline-secondary margin" #button="ngModel" name="button" ngModel >{{seat.seatNumber}}</button>
-              </div>
-        </div>
-        
+                <div *ngFor="let car of cars">
+                    <button type="button" class="btn btn-outline-secondary btn-color margin" [class.btn-occupied-background-color]="seat.occupied"
+                    [class.btn-free-background-color]="!seat.occupied" [disabled]="seat.occupied"
+                            *ngIf="car.trainId == trainId && seat.carId == car.id && car.type == selectedCarType">{{seat.seatNumber}}</button>
+                </div>
+                
+            </div>
+    </div>
 
-</div>
+</div>  

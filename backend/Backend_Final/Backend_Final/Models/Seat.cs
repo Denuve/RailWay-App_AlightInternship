@@ -14,5 +14,7 @@ namespace Backend_Final.Models
         public int SeatNumber { get; set; }
 
         public bool Occupied { get; set; }
+
+        public Guid BookingId { get; set; }
     }
 }

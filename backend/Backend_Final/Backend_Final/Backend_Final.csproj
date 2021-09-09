@@ -209,11 +209,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\BookSeatsController.cs" />
     <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SeatsController.cs" />
     <Compile Include="Controllers\TrainsController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -226,7 +226,12 @@
     <Compile Include="Migrations\202109071256483_SeatUpgrade.Designer.cs">
       <DependentUpon>202109071256483_SeatUpgrade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109091340581_Added bookings.cs" />
+    <Compile Include="Migrations\202109091340581_Added bookings.Designer.cs">
+      <DependentUpon>202109091340581_Added bookings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\BookSeats.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Seat.cs" />
     <Compile Include="Models\Train.cs" />
@@ -321,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109071256483_SeatUpgrade.resx">
       <DependentUpon>202109071256483_SeatUpgrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109091340581_Added bookings.resx">
+      <DependentUpon>202109091340581_Added bookings.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

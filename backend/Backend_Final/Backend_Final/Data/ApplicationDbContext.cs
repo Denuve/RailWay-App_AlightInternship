@@ -22,5 +22,7 @@ namespace Backend_Final.Data
         public DbSet<Train> Trains { get; set; }
         public DbSet<Car> Cars { get; set; }
         public DbSet<Seat> Seats { get; set; }
+
+        public System.Data.Entity.DbSet<Backend_Final.Models.BookSeats> BookSeats { get; set; }
     }
 }

@@ -117,3 +117,4 @@ C:\Users\Denuve-Portable\Desktop\RailWay-App_AlightInternship\backend\Backend_Fi
 C:\Users\Denuve-Portable\Desktop\RailWay-App_AlightInternship\backend\Backend_Final\Backend_Final\obj\Debug\Backend_Final.Migrations.Initial.resources
 C:\Users\Denuve-Portable\Desktop\RailWay-App_AlightInternship\backend\Backend_Final\Backend_Final\obj\Debug\Backend_Final.csproj.GenerateResource.cache
 C:\Users\Denuve-Portable\Desktop\RailWay-App_AlightInternship\backend\Backend_Final\Backend_Final\obj\Debug\Backend_Final.Migrations.SeatUpgrade.resources
+C:\Users\Denuve-Portable\Desktop\RailWay-App_AlightInternship\backend\Backend_Final\Backend_Final\obj\Debug\Backend_Final.Migrations.Addedbookings.resources

@@ -4,23 +4,68 @@
         <h2 class="pt-font text-align-center">{{train.name}}</h2>
     </div>
     
-
+    <div class="alert alert-background-color" role="alert">
+            Click on a seat if you want to book it after you selected the class!
+        </div>
     <div class="flex flex-center"> 
         <button type="button" class="btn btn-background-color margin" (click)="firstClass()">First Class</button>
         <button type="button" class="btn btn-background-color margin" (click)="secondClass()">Second Class</button>
         <button type="button" class="btn btn-background-color margin" (click)="sleeping()">Sleeping</button>
     </div>
 
+   
 
     <div class="btn-toolbar mt-3 flex flex-center" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group me-2" role="group" aria-label="First group" *ngFor="let seat of seats">
                 <div *ngFor="let car of cars">
                     <button type="button" class="btn btn-outline-secondary btn-color margin" [class.btn-occupied-background-color]="seat.occupied"
-                    [class.btn-free-background-color]="!seat.occupied" [disabled]="seat.occupied"
-                            *ngIf="car.trainId == trainId && seat.carId == car.id && car.type == selectedCarType">{{seat.seatNumber}}</button>
+                            [class.btn-free-background-color]="!seat.occupied" [disabled]="seat.occupied"
+                            *ngIf="car.trainId == trainId && seat.carId == car.id && car.type == selectedCarType"
+                            (click)="selectSeat(seat.id)"
+                            >{{seat.seatNumber}}</button>
                 </div>
                 
             </div>
     </div>
+
+
+    <form (submit)="login(loginForm)" #loginForm="ngForm">
+
+        <div class="wrapper">
+
+            <div class="form-group">
+                <label class="text-dec-def">Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name"
+                 #name="ngModel" name="name" ngModel required>
+              </div>
+              
+              <div class="alert alert-danger mt-2" role="alert" *ngIf="name.touched && !name.value">
+                Your name is required!
+              </div>
+
+              <div class="form-group">
+                <label class="text-dec-def">CNP</label>
+                <input type="text" class="form-control" placeholder="Enter your CNP"
+                 #cnp="ngModel" name="cnp" ngModel required>
+              </div>
+              
+              <div class="alert alert-danger mt-2" role="alert" *ngIf="cnp.touched && !cnp.value">
+                Your CNP is required!
+              </div>
+
+            <div class="form-group">
+              <label class="text-dec-def">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email"
+               #email="ngModel" name="email" ngModel required email>
+            </div>
+
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="email.invalid && email.touched">
+              Please enter a valid e-mail address!
+            </div>
+  
+            <button type="submit" class="btn btn-primary mt-3" >Submit</button>
+        </div>
+
+    </form>
 
 </div>  

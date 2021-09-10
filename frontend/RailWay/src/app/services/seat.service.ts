@@ -15,4 +15,12 @@ export class SeatService {
     return this.http.get<Seat[]>(this.baseUri + 'api/Seats');
   }
 
+  getSeat(seatId: string){
+    return this.http.get<Seat>(this.baseUri + `api/Seats/${seatId}`);
+  }
+
+  putSeat(seatId: string, seat: Seat){
+    return this.http.put<any>(this.baseUri + `api/Seats/${seatId}`, seat);
+  }
+
 }

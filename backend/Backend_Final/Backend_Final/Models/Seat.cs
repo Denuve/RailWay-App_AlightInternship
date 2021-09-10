@@ -15,6 +15,6 @@ namespace Backend_Final.Models
 
         public bool Occupied { get; set; }
 
-        public Guid BookingId { get; set; }
+        public Guid BookingCode { get; set; }
     }
 }

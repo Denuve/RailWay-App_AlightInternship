@@ -16,6 +16,10 @@
 .btn-background-color{
     background-color: #e8e266;
 }
+
+.alert-background-color{
+    background-color: #e8e266;
+}
 .btn-color{
     color: white;
 }
@@ -24,6 +28,10 @@
 }
 .btn-free-background-color{
     background-color: rgb(33, 199, 33);
+}
+
+.btn-selected{
+    background-color: rgb(21, 25, 231);
 }
 .margin{
     margin: 10px;

@@ -80,8 +80,7 @@ namespace Backend_Final.Controllers
             {
                 return BadRequest(ModelState);
             }
-
-            bookSeats.Id = Guid.NewGuid();
+            
 
             db.BookSeats.Add(bookSeats);
 

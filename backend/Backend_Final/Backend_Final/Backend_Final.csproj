@@ -230,6 +230,10 @@
     <Compile Include="Migrations\202109091340581_Added bookings.Designer.cs">
       <DependentUpon>202109091340581_Added bookings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109101341591_update Seats.cs" />
+    <Compile Include="Migrations\202109101341591_update Seats.Designer.cs">
+      <DependentUpon>202109101341591_update Seats.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BookSeats.cs" />
     <Compile Include="Models\Car.cs" />
@@ -329,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109091340581_Added bookings.resx">
       <DependentUpon>202109091340581_Added bookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109101341591_update Seats.resx">
+      <DependentUpon>202109101341591_update Seats.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
